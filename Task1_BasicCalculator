@@ -1,0 +1,18 @@
+print("Welcome to MyCalculator!!")
+while(True):
+    print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\nEnter your choice:")
+    ch=int(input())
+    print("Enter the numbers:")
+    a=float(input())
+    b=float(input())
+    match(ch):
+        case 1: res=a+b
+        case 2: res=a-b
+        case 3: res=a*b    
+        case 4: res=a/b
+        case _: print("Invalid input!")
+    print("Answer = ",res)
+    print("Do you want to continue?(y/n): ")
+    val=input()
+    if val=='n':
+        break
